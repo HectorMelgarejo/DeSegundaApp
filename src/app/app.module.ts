@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { App } from './app.component';
-import { VehiculoModule } from './vehiculo/vehiculo.module';
 import { provideHttpClient } from '@angular/common/http';
 import { VehiculoListarComponent } from "./vehiculo/listar-vehiculo/listar-vehiculo.component";
 
@@ -14,7 +13,6 @@ import { VehiculoListarComponent } from "./vehiculo/listar-vehiculo/listar-vehic
   imports: [
     BrowserModule,
     AppRoutingModule,
-    VehiculoModule,
     VehiculoListarComponent
 ],
   providers: [provideHttpClient()],

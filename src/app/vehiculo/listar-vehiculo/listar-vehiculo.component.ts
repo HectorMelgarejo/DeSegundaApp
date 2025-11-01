@@ -5,7 +5,8 @@ import { VehiculoService } from '../vehiculo.service';
 @Component({
   selector: 'app-listar-vehiculo',
   templateUrl: './listar-vehiculo.component.html',
-  styleUrls: ['./listar-vehiculo.component.css']
+  styleUrls: ['./listar-vehiculo.component.css'],
+  standalone: true
 })
 export class VehiculoListarComponent implements OnInit {
 
