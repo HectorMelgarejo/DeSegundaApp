@@ -1,0 +1,22 @@
+<div class="container mt-4">
+  <h2>Listado de vehículos de segunda mano</h2>
+
+  <table class="table table-striped mt-3">
+    <thead class="table-dark">
+      <tr>
+        <th>Marca</th>
+        <th>Línea</th>
+        <th>Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (v of vehiculos; track v.id) {
+        <tr>
+          <td>{{ v.marca }}</td>
+          <td>{{ v.linea }}</td>
+          <td>{{ v.modelo }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>
